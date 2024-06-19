@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 interface ButtonProps {
-    handleClick: () => Promise<void>;
+    handleClick: () => void
 }
 
 const Button:FC<ButtonProps>  = ({ handleClick }) => {
