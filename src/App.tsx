@@ -1,4 +1,4 @@
-import OnThisDay from "./components/OnThisDay.tsx";
+import OnThisDay from "./components/OnThisDay/OnThisDay.tsx";
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
 function App() {

@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import  './styles.css'
 
 interface ButtonProps {
     handleClick: () => void
@@ -6,7 +7,7 @@ interface ButtonProps {
 
 const Button:FC<ButtonProps>  = ({ handleClick }) => {
     return (
-        <button onClick={handleClick}>Get Today's Events</button>
+        <button className='button' onClick={handleClick}>Get Today's Events</button>
     )
 }
 
