@@ -1,9 +1,14 @@
 import OnThisDay from "./components/OnThisDay.tsx";
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
 function App() {
 
+  const queryClient = new QueryClient();
+
   return (
-      <OnThisDay />
+      <QueryClientProvider client={queryClient}>
+        <OnThisDay />
+      </QueryClientProvider>
   )
 }
 
