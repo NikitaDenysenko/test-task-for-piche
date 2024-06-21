@@ -30,7 +30,6 @@ const OnThisDay = () => {
             <Button handleClick={handleButtonClick} />
             <Spacer height='24px'/>
             {isLoading && <p>Loading...</p>}
-            {error && <p>Error fetching data from Wikipedia API</p>}
             <ul>
                 {events.map((event, index) => (
                     <li key={index}>{event.year}: {event.text}</li>
